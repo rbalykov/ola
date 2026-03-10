@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -33,7 +33,7 @@ wrapper = None
 
 def DMXData(status, universe, data):
   if status.Succeeded():
-    print(data)
+    print(data.tobytes().hex())
 
   else:
     print('Error: %s' % status.message, file=sys.stderr)
@@ -61,7 +61,7 @@ def main():
     Usage()
     sys.exit(2)
 
-  universe = 1
+  universe = 0
   for o, a in opts:
     if o in ("-h", "--help"):
       Usage()
