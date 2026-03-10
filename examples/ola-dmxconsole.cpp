@@ -104,7 +104,7 @@ static dmx_t *dmx;
 static dmx_t *dmxsave;
 static dmx_t *dmxundo;
 
-static int display_mode = DISP_MODE_DMX;
+static int display_mode = DISP_MODE_HEX;
 static int current_channel = 0;  // channel cursor is positioned on
 static int first_channel = 0;  // channel in upper left corner
 static int channels_per_line = 80 / CHANNEL_DISPLAY_WIDTH;

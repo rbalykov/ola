@@ -101,7 +101,7 @@ typedef struct {
 
 class DmxMonitor *dmx_monitor;
 
-static unsigned int display_mode = DISP_MODE_DMX;
+static unsigned int display_mode = DISP_MODE_HEX;
 static int current_channel = 0;    /* channel cursor is positioned on */
 static int first_channel = 0;    /* channel in upper left corner */
 static unsigned int channels_per_line = 80 / CHANNEL_DISPLAY_WIDTH;
